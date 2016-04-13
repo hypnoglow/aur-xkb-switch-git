@@ -23,5 +23,5 @@ package() {
 	make DESTDIR="$pkgdir/" install
 
 	mkdir "$pkgdir/usr/bin"
-	ln -st "$pkgdir/usr/bin" "$pkgdir/usr/local/bin/xkb-switch"
+	ln -st "$pkgdir/usr/bin" "/usr/local/bin/xkb-switch"
 }
